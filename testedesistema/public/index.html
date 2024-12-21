@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Anúncio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Criar Anúncio</h1>
+    <form id="anuncioForm" action="/api/anuncios" method="POST" enctype="multipart/form-data">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+
+      <label for="preco">Preço:</label>
+      <input type="number" id="preco" name="preco" required>
+
+      <label for="localizacao">Localização:</label>
+      <input type="text" id="localizacao" name="localizacao" required>
+
+      <label for="quartos">Quartos:</label>
+      <input type="number" id="quartos" name="quartos" required>
+
+      <label for="banheiros">Banheiros:</label>
+      <input type="number" id="banheiros" name="banheiros" required>
+
+      <label for="tamanho">Tamanho (m²):</label>
+      <input type="number" id="tamanho" name="tamanho" required>
+
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
