@@ -237,7 +237,8 @@ main#main2 section#s2 div {
     background-color: #1B77E1;
     border: solid 1px black;
     margin-top: 10px;
-
+    border-radius: 5px;
+    box-shadow: 2px 2px  rgba(0, 0, 0, 0.103);
     background-image: url(imagens/foto-inicio.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,6 +256,7 @@ footer {
     align-items: center;
     justify-content: center;
     
+
 
 }
 
