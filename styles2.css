@@ -65,7 +65,7 @@ header img#logoh {
 header nav {
 
     height: 100vh;
-    width: 40%;
+    width: 60%;
     border: solid black 1px;
     border-radius: 0px 10px 10px 0px;
     background-color: white;
@@ -188,7 +188,7 @@ section#s1 a:hover {
 
 section#s1 div#ds1 div {
 
-    margin-top: 50px;
+    
     margin-left: 10px;
 
 } 
