@@ -150,7 +150,7 @@ section#s1 div#ds1 {
 
 }
 
-section#s1 p {
+section#s1 p#p1t {
 
     font-size: 2em;
     font-weight: 500;
@@ -190,6 +190,7 @@ section#s1 div#ds1 div {
 
     
     margin-left: 10px;
+    align-self: flex-start;
 
 } 
 
