@@ -41,11 +41,19 @@ header {
     position: relative;
 }
 
-header #menuh {
-    font-size: 2.5em;
-    cursor: pointer;
+
+    header #menuh {
+        font-size: 2.5em;
+        cursor: pointer;
+        position: relative; /* Altere para relativo */
+        z-index: 1100; /* Garante que o ícone fique acima do menu */
+        background-color: white; /* Adiciona um fundo para garantir contraste */
+        border-radius: 50%; /* Ajusta visualmente para parecer um botão */
+        padding: 10px; /* Para maior área clicável */
+    }
     
-}
+    
+
 
 header #logoh {
     height: 60px;
@@ -88,6 +96,7 @@ header nav a {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px 0;
+    width: 50%;
     text-align: center;
     transition: background-color 0.3s;
 }
@@ -203,3 +212,12 @@ footer .footer-contact {
 footer .footer-contact img.wpp {
     width: 20px;
 }
+
+.card img {
+    width: 100%; /* A imagem ocupa toda a largura do cartão */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
