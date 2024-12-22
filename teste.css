@@ -51,6 +51,13 @@ header {
         border-radius: 50%; /* Ajusta visualmente para parecer um botão */
         padding: 10px; /* Para maior área clicável */
     }
+
+    header #menuh:hover {
+
+        color: #1B77E1;
+        transition: .3s;
+
+    }
     
     
 
@@ -96,7 +103,7 @@ header nav a {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px 0;
-    width: 50%;
+    
     text-align: center;
     transition: background-color 0.3s;
 }
