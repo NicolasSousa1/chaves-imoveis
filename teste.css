@@ -41,26 +41,20 @@ header {
     position: relative;
 }
 
+header #menuh {
+    font-size: 2.5em;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
 
-    header #menuh {
-        font-size: 2.5em;
-        cursor: pointer;
-        position: relative; /* Altere para relativo */
-        z-index: 1100; /* Garante que o ícone fique acima do menu */
-        background-color: white; /* Adiciona um fundo para garantir contraste */
-        border-radius: 50%; /* Ajusta visualmente para parecer um botão */
-        padding: 10px; /* Para maior área clicável */
-    }
-
-    header #menuh:hover {
-
-        color: #1B77E1;
-        transition: .3s;
-
-    }
-    
-    
-
+header #menuh:hover {
+    color: #1B77E1;
+    transition: 0.3s;
+}
 
 header #logoh {
     height: 60px;
@@ -103,7 +97,6 @@ header nav a {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 5px 0;
-    
     text-align: center;
     transition: background-color 0.3s;
 }
@@ -163,21 +156,38 @@ header nav a:hover {
 }
 
 #s2 {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 #s2 h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
     text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
 }
 
 .card {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -196,13 +206,9 @@ header nav a:hover {
     font-size: 1.5em;
 }
 
-.card .details {
-    color: #666;
-    font-size: 0.9em;
-}
-
+.card .details,
 .card .address {
-    color: #888;
+    color: #666;
     font-size: 0.9em;
 }
 
@@ -210,6 +216,7 @@ footer {
     background: lightgray;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
 
 footer .footer-contact {
@@ -222,12 +229,3 @@ footer .footer-contact {
 footer .footer-contact img.wpp {
     width: 20px;
 }
-
-.card img {
-    width: 100%; /* A imagem ocupa toda a largura do cartão */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas */
-    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-}
-
