@@ -15,20 +15,7 @@ telas grandes: acima de 1200px
 /* celulares */
 
 /* Responsividade para telas menores */
-@media (max-width: 767px) {
-
-    header nav#navegacaog {
-
-        display: none;
-
-    }
-
-    header div.header-container img#logoh {
-
-        display: none;
-
-    } 
-
+@media (max-width: 768px) {
     #s2 {
         padding: 0 10px;
     }
@@ -36,24 +23,4 @@ telas grandes: acima de 1200px
     .announcements {
         grid-template-columns: 1fr; /* 1 anúncio por linha em telas pequenas */
     }
-
-
-}
-
-@media screen and (min-width: 768px) {
-    
-    header div.header-container span#menuh {
-
-        display: none;
-
-    }
-
-    header img#logoh1 {
-
-        display: none;
-
-    }
-
-    
-
 }

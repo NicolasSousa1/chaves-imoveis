@@ -26,10 +26,8 @@
             <span class="material-symbols-outlined" id="menuh">
                 menu
             </span>
-            <img src="imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh">
+            <img src="imagens/LOGO.png" alt="Logo" id="logoh">
         </div>
-
-        <img src="imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh1">
 
         <nav id="navegacao">
             <img src="imagens/CHAVES_IMÓVEIS-removebg-preview.png" alt="Logo da empresa">
@@ -39,16 +37,6 @@
             <a href="#">Quem Somos</a>
             <a href="#">Contato</a>
         </nav>
-
-        <nav id="navegacaog">
-            
-            <a href="#">Home</a>
-            <a href="#">Comprar</a>
-            <a href="#">Locação</a>
-            <a href="#">sobre nós</a>
-            <a href="#">Contato</a>
-        </nav>
-
     </header>
 
     <main>

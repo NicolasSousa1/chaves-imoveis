@@ -60,11 +60,7 @@ header #logoh {
     height: 60px;
 }
 
-header #logoh1 {
-    height: 60px;
-}
-
-header nav#navegacao {
+header nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -79,26 +75,6 @@ header nav#navegacao {
     align-items: center;
     padding: 20px;
     z-index: 1000;
-}
-
-header nav#navegacaog {
-
-    display: flex;
-    flex-flow: row nowrap;
-
-
-    
-    
-
-}
-
-header nav#navegacaog a {
-
-    margin: 5px;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.062);
-    width: 120px;
-    height: 40px;
-
 }
 
 header nav.active {
@@ -120,7 +96,6 @@ header nav a {
     background-color: #1B77E1;
     padding: 10px 20px;
     border-radius: 5px;
-    width: 50%;
     margin: 5px 0;
     text-align: center;
     transition: background-color 0.3s;
