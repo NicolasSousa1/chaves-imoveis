@@ -203,42 +203,6 @@ header nav a:hover {
     justify-content: center;
 }
 
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card p {
-    margin: 5px 0;
-}
-
-.card .type {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.card .price {
-    color: #1B77E1;
-    font-size: 1.5em;
-}
-
-.card .details,
-.card .address {
-    color: #666;
-    font-size: 0.9em;
-}
-
 footer {
     background: lightgray;
     text-align: center;
@@ -255,4 +219,113 @@ footer .footer-contact {
 
 footer .footer-contact img.wpp {
     width: 20px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Indicadores de destaque */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Carousel de imagens */
+/* Ajustando o carousel para exibir apenas uma imagem por vez */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    display: none; /* Por padrão, todas as imagens estarão ocultas */
+}
+
+.carousel img.active {
+    display: block; /* Apenas a imagem ativa será exibida */
+}
+
+/* Botões de navegação no carousel */
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+@keyframes slide {
+    0%, 33% {
+        transform: translateX(0%);
+    }
+    34%, 66% {
+        transform: translateX(-100%);
+    }
+    67%, 100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* Animações no carregamento */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.card:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
