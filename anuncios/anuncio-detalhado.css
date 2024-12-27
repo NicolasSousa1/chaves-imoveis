@@ -49,7 +49,7 @@ header nav#navegacao {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 60%;
     background-color: white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -237,7 +237,7 @@ header nav a:hover {
 }
 
 .btn-contatowpp {
-    background: #09ff00;
+    background: #1B77E1;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -245,6 +245,12 @@ header nav a:hover {
     cursor: pointer;
     font-size: 1em;
     margin: 5px;
+}
+
+.wppverde {
+
+    background-color: #09ff00;
+
 }
 
 .btn-contato:hover {
@@ -286,3 +292,41 @@ footer .footer-contact img.wpp {
     width: 20px;
 }
 
+
+
+
+/* Estilo da caixa de contato */
+.caixa-contato {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.caixa-contato-conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.caixa-contato button {
+    margin-top: 15px;
+    background-color: #1B77E1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.caixa-contato button:hover {
+    background-color: #5584B9;
+}
