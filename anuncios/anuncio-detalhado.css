@@ -1,0 +1,288 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    position: relative;
+}
+
+header #menuh {
+    font-size: 2.5em;
+    cursor: pointer;
+    position: relative;
+    z-index: 11000;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+header #menuh:hover {
+    color: #1B77E1;
+    transition: 0.3s;
+}
+
+header #logoh {
+    height: 60px;
+}
+
+header #logoh1 {
+    height: 60px;
+}
+
+header nav#navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 10000;
+}
+
+header nav#navegacaog {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header nav#navegacaog a {
+    margin: 5px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.062);
+    width: 120px;
+    height: 40px;
+}
+
+header nav.active {
+    animation: slideIn 0.3s forwards;
+}
+
+header nav.closing {
+    animation: slideOut 0.3s forwards;
+}
+
+header nav img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #1B77E1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 5px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #5584B9;
+}
+
+.container {
+    margin: 20px;
+    
+}
+
+/* Carrossel */
+.carrossel-imagens {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.imagens-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.imagens-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.carrossel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.carrossel-btn.preva {
+    left: 10px;
+}
+
+.carrossel-btn.nexta {
+    right: 10px;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Conteúdo */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+/* Informações e descrição */
+.informacoes-descricao {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-descricao h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1B77E1;
+}
+
+.informacoes-descricao .localizacao {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.informacoes-descricao .preco {
+    font-size: 1.5em;
+    color: #1B77E1;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.informacoes-descricao .detalhes-principais {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botão de contato */
+
+
+/* Contato */
+.contato {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    position: sticky; /* Fixa em uma posição ao rolar */
+    top: 20px; /* Fica a 20px do topo da tela */
+    z-index: 10; /* Garante que apareça acima de outros elementos */
+}
+
+
+.btn-contato {
+    background: #1B77E1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.btn-contatowpp {
+    background: #09ff00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.btn-contato:hover {
+    background: #155a9c;
+    transition: background 0.3s;
+}
+
+/* Mapa */
+.mapa {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralizar e limitar apenas as informações, descrição e mapa */
+.conteudo, .mapa {
+    max-width: 1000px;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Espaçamento lateral para telas menores */
+}
+
+footer {
+    background: lightgray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .footer-contact img.wpp {
+    width: 20px;
+}
+
