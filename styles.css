@@ -124,7 +124,7 @@ header nav a:hover {
 
 
 #s1 {
-    background: url("../imagens/condominios/f1.jpg") no-repeat center center;
+    background: url("imagens/condominios/f1.jpg") no-repeat center center;
     background-size: cover;
     height: 400px;
     display: flex;
