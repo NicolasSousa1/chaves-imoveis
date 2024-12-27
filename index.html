@@ -26,25 +26,25 @@
             <span class="material-symbols-outlined" id="menuh">
                 menu
             </span>
-            <img src="imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh">
+            <img src="../imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh">
         </div>
 
-        <img src="imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh1">
+        <img src="../imagens/logo-nova-removebg-preview.png" alt="Logo" id="logoh1">
 
         <nav id="navegacao">
-            <img src="imagens/CHAVES_IMÓVEIS-removebg-preview.png" alt="Logo da empresa">
-            <a href="#">Home</a>
+            <img src="../imagens/CHAVES_IMÓVEIS-removebg-preview.png" alt="Logo da empresa">
+            <a href="index.html">Home</a>
             <a href="vendas.html">Comprar</a>
-            <a href="#">Locação</a>
+            <a href="alugar.html">Locação</a>
             <a href="#">Quem Somos</a>
             <a href="#">Contato</a>
         </nav>
 
         <nav id="navegacaog">
             
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="vendas.html">Comprar</a>
-            <a href="#">Locação</a>
+            <a href="alugar.html">Locação</a>
             <a href="#">sobre nós</a>
             <a href="#">Contato</a>
         </nav>
@@ -57,91 +57,49 @@
             <div id="ds1">
                 <p id="p1t">Encontre o imóvel ideal para você</p>
                 <div class="cta-buttons">
-                    <a href="#">Comprar</a>
-                    <a href="#">Alugar</a>
+                    <a href="vendas.html">Comprar</a>
+                    <a href="alugar.html">Alugar</a>
                     <a href="#">Quem Somos</a>
                     <a href="#">Contato</a>
                 </div>
 
                 <div class="contact-info">
-                    <img src="imagens/whatsapp.png" alt="WhatsApp" class="wpp">
+                    <img src="../imagens/whatsapp.png" alt="WhatsApp" class="wpp">
                     <span>(11) 94755-8646</span>
                 </div>
             </div>
         </section>
 
-        <section id="s2">
-            <h2>Imóveis para Locação</h2>
-            <div class="announcements">
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
 
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/foto-inicio.JPG" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.000</p>
-                    <p class="details">55 m² - 2 quartos, 1 suíte</p>
-                    <p class="address">Avenida das Pitangueiras, 267</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f1.jpg" alt="Apartamento para locação">
-                    <p class="type">Apartamento</p>
-                    <p class="price">R$ 2.500</p>
-                    <p class="details">65 m² - 3 quartos, 1 suíte</p>
-                    <p class="address">Rua dos Laranjais, 123</p>
-                </div>
-            </div>
-
+       <section id="s2">
             <h2>Imóveis à Venda</h2>
+
+            <div class="filter-container">
+                <label for="filter-type">Filtrar por Tipo:</label>
+                <select id="filter-type">
+                    <option value="todos">Todos</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+            </div>
+            
+            
             <div class="announcements">
+
+                
+                
+
                 <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
+                    <div class="carousel" >
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="badge">Destaque</div>
                     <p class="type">Casa</p>
                     <p class="price">R$ 550.000</p>
                     <p class="details">120 m² - 3 quartos, 2 suítes</p>
@@ -149,61 +107,227 @@
                 </div>
 
                 <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/condominios/f3.jpg" alt="Casa à venda">
-                    <p class="type">Casa</p>
-                    <p class="price">R$ 550.000</p>
-                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
-                    <p class="address">Alameda das Flores, 45</p>
-                </div>
-
-                <div class="card">
-                    <img src="imagens/imovel4.jpg" alt="Apartamento à venda">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
                     <p class="type">Apartamento</p>
                     <p class="price">R$ 350.000</p>
                     <p class="details">70 m² - 2 quartos, 1 suíte</p>
                     <p class="address">Rua das Acácias, 89</p>
                 </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                    <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                    <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                    <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                    <div class="carousel-buttons">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
             </div>
+
+            <h2>Imoveis para Locação</h2>
+
+            <div class="announcements">
+
+                
+                
+
+                <div class="card">
+                    <div class="carousel" >
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="badge">Destaque</div>
+                    <p class="type">Casa</p>
+                    <p class="price">R$ 550.000</p>
+                    <p class="details">120 m² - 3 quartos, 2 suítes</p>
+                    <p class="address">Alameda das Flores, 45</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                        <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                        <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                        <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                        <div class="carousel-buttons">
+                            <button class="prev">&lt;</button>
+                            <button class="next">&gt;</button>
+                        </div>
+                    </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+                <div class="card">
+                    <div class="carousel">
+                    <img src="../imagens/condominios/f3.jpg" alt="Imagem 1" class="active">
+                    <img src="../imagens/foto-inicio.JPG" alt="Imagem 2">
+                    <img src="../imagens/condominios/f1.jpg" alt="Imagem 3">
+                    <div class="carousel-buttons">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div>
+                </div>
+                    <p class="type">Apartamento</p>
+                    <p class="price">R$ 350.000</p>
+                    <p class="details">70 m² - 2 quartos, 1 suíte</p>
+                    <p class="address">Rua das Acácias, 89</p>
+                </div>
+
+            </div>
+
+            
+
         </section>
 
     </main>
@@ -211,13 +335,14 @@
     <footer>
         <p>&copy;Chaves Elias Imóveis</p>
         <div class="footer-contact">
-            <img src="imagens/whatsapp.png" alt="WhatsApp" class="wpp">
+            <img src="../imagens/whatsapp.png" alt="WhatsApp" class="wpp">
             <span>WhatsApp: (11) 94755-8646</span>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-
+    <script src="../script.js"></script>
 </body>
 
 </html>
+
+

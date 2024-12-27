@@ -82,23 +82,15 @@ header nav#navegacao {
 }
 
 header nav#navegacaog {
-
     display: flex;
     flex-flow: row nowrap;
-
-
-    
-    
-
 }
 
 header nav#navegacaog a {
-
     margin: 5px;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.062);
     width: 120px;
     height: 40px;
-
 }
 
 header nav.active {
@@ -130,57 +122,7 @@ header nav a:hover {
     background-color: #5584B9;
 }
 
-/*
-#s1 {
-    background: url("imagens/condominios/f1.jpg") no-repeat center center;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#ds1 {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 5px;
-}
-
-#ds1 #p1t {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.cta-buttons a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #1B77E1;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-buttons a:hover {
-    background-color: #5584B9;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
-}
-
-.contact-info .wpp {
-    width: 24px;
-}
-*/
 
 #s2 {
     max-width: 1000px;
@@ -221,7 +163,6 @@ footer .footer-contact img.wpp {
     width: 20px;
 }
 
-
 .card {
     background: white;
     border-radius: 10px;
@@ -250,7 +191,6 @@ footer .footer-contact img.wpp {
 }
 
 /* Carousel de imagens */
-/* Ajustando o carousel para exibir apenas uma imagem por vez */
 .carousel {
     position: relative;
     overflow: hidden;
@@ -262,14 +202,15 @@ footer .footer-contact img.wpp {
 .carousel img {
     width: 100%;
     flex-shrink: 0;
-    display: none; /* Por padrão, todas as imagens estarão ocultas */
+    display: none;
 }
 
 .carousel img.active {
-    display: block; /* Apenas a imagem ativa será exibida */
+    display: block;
 }
 
 /* Botões de navegação no carousel */
+/* Estilo para os botões de navegação no carousel */
 .carousel-buttons {
     position: absolute;
     top: 50%;
@@ -278,54 +219,110 @@ footer .footer-contact img.wpp {
     justify-content: space-between;
     transform: translateY(-50%);
     z-index: 10;
+    opacity: 0; /* Esconde os botões por padrão */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Evita interações quando os botões estão invisíveis */
+}
+
+.card:hover .carousel-buttons, 
+.carousel:hover .carousel-buttons {
+    opacity: 1; /* Mostra os botões quando o mouse está sobre o card ou o carousel */
+    pointer-events: auto; /* Permite interações quando os botões estão visíveis */
 }
 
 .carousel-buttons button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.308);
+    color: rgb(0, 0, 0);
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.2em;
+   
     transition: background-color 0.3s;
 }
 
 .carousel-buttons button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    
 }
 
 
-@keyframes slide {
-    0%, 33% {
-        transform: translateX(0%);
-    }
-    34%, 66% {
-        transform: translateX(-100%);
-    }
-    67%, 100% {
-        transform: translateX(-200%);
-    }
-}
-
-/* Animações no carregamento */
-.card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.5s forwards;
-}
-
-.card:nth-child(odd) {
-    animation-delay: 0.2s;
-}
-
-.card:nth-child(even) {
-    animation-delay: 0.4s;
-}
-
+/* Fade-in animation */
 @keyframes fadeIn {
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+
+/* Estilo do container do filtro */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    
+    
+    
+}
+
+/* Input de texto do filtro */
+.filter-container input[type="text"] {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-container input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Botão do filtro */
+.filter-container button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.filter-container button:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+/* Estilização do dropdown (select) */
+.filter-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-container select:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
 }
