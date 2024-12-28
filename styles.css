@@ -23,6 +23,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+
 }
 
 body {
@@ -193,6 +201,32 @@ header nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     justify-content: center;
+}
+
+.type {
+
+font-weight: bold;
+font-size: 1.2em;
+
+}
+
+.price {
+
+    color: #0056b3;
+    font-size: 1.5em;
+
+}
+
+.details {
+
+    font-weight: bold;
+
+}
+
+.address {
+
+    color: #0056b3;
+
 }
 
 footer {
@@ -375,12 +409,5 @@ footer .footer-contact img.wpp {
 .filter-container select:focus {
     border-color: #007BFF;
     box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
-}
-
-
-.card-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
 }
 
