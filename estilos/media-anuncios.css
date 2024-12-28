@@ -26,6 +26,40 @@ telas grandes: acima de 1200px
 
 }
 
+/* Ajustes para dispositivos menores que 450px */
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden; /* Impede a rolagem lateral */
+    }
+
+    .carrossel-imagens {
+        flex-direction: column; /* Ajusta o layout do carrossel */
+    }
+
+    .imagens-container img {
+        width: 100%; /* Garante que as imagens se ajustem ao tamanho da tela */
+        height: auto;
+    }
+
+    .conteudo {
+        flex-direction: column; /* Empilha os elementos no eixo vertical */
+        gap: 10px; /* Reduz o espaçamento entre os elementos */
+    }
+
+    .informacoes-descricao, .contato, .mapa {
+        width: 100%; /* Garante que ocupem toda a largura disponível */
+        margin: 0 auto; /* Centraliza os elementos */
+    }
+
+    header nav#navegacaog {
+        display: none; /* Esconde a navegação horizontal em dispositivos pequenos */
+    }
+
+    header #logoh1 {
+        display: none; /* Oculta o logo adicional em dispositivos menores */
+    }
+}
+
 @media (max-width: 767px) {
 
     header nav#navegacaog {
