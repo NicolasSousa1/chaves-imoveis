@@ -63,4 +63,3 @@ filterSelect.addEventListener('change', () => {
     });
 });
 
-window.alert("oi")
