@@ -1,0 +1,70 @@
+/*
+
+pequenas telas: até 600px
+
+celuares: de 600 até 768px
+
+tablets: de 768px até 992px
+
+desktops de 992px até 1200
+
+telas grandes: acima de 1200px 
+
+*/
+
+/* celulares */
+
+/* Responsividade para telas menores */
+
+@media screen and (max-width: 389px ) {
+    
+    header nav a {
+
+        width: auto;
+
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    header nav#navegacaog {
+
+        display: none;
+
+    }
+
+    header div.header-container img#logoh {
+
+        display: none;
+
+    } 
+
+    #s2 {
+        padding: 0 10px;
+    }
+
+    .announcements {
+        grid-template-columns: 1fr; /* 1 anúncio por linha em telas pequenas */
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    header div.header-container span#menuh {
+
+        display: none;
+
+    }
+
+    header img#logoh1 {
+
+        display: none;
+
+    }
+
+    
+
+}
