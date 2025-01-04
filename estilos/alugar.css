@@ -80,6 +80,12 @@ header #logoh1 {
     height: 60px;
 }
 
+header #logoh2 {
+
+    margin-top: 40px;
+
+}
+
 header nav#navegacao {
     position: fixed;
     top: 0;
