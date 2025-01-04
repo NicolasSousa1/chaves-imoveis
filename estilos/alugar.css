@@ -62,7 +62,7 @@ header #menuh {
     cursor: pointer;
     position: relative;
     z-index: 1100;
-    background-color: white;
+    
     border-radius: 50%;
     padding: 10px;
 }
