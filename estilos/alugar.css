@@ -25,6 +25,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+html, body {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 body {
     width: 100%;
     height: 100%;
@@ -129,7 +138,11 @@ header nav a:hover {
     background-color: #5584B9;
 }
 
+main {
 
+    flex: 1;
+
+}
 
 #s2 {
     max-width: 1000px;
@@ -179,10 +192,11 @@ header nav a:hover {
     }
 
 footer {
-    background: lightgray;
+    background: #1B77E1;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    color: white;
 }
 
 footer .footer-contact {

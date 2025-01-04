@@ -1,13 +1,39 @@
-@charset "UTF-8";
+/* Animações para o menu */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilo global */
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
+}
+
+html, body {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
 }
+
 
 a {
 
@@ -113,8 +139,11 @@ header nav a:hover {
     background-color: #5584B9;
 }
 
+main {
 
+    flex: 1;
 
+}
 
 
 section#s {
@@ -132,6 +161,7 @@ section#s div#imgf {
     width: 80%;
     height: 400px;
     max-width: 800px;
+    margin: 20px;
     background-image: url(../imagens/pexels-a-darmel-7642000.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -139,12 +169,6 @@ section#s div#imgf {
 
 }
 
-section#s img {
-
-    max-width: 800px;
-    margin: 20px;
-
-}
 
 section#s p {
 
@@ -155,14 +179,12 @@ section#s p {
 }
 
 
-
-
-
 footer {
-    background: lightgray;
+    background: #1B77E1;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    color: white;
 }
 
 footer .footer-contact {
@@ -175,3 +197,6 @@ footer .footer-contact {
 footer .footer-contact img.wpp {
     width: 20px;
 }
+
+
+

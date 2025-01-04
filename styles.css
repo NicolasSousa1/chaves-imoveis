@@ -230,10 +230,11 @@ font-size: 1.2em;
 }
 
 footer {
-    background: lightgray;
+    background: #1B77E1;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    color: white;
 }
 
 footer .footer-contact {
