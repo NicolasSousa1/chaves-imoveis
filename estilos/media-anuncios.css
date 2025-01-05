@@ -55,9 +55,7 @@ telas grandes: acima de 1200px
         display: none; /* Esconde a navegação horizontal em dispositivos pequenos */
     }
 
-    header #logoh1 {
-        display: none; /* Oculta o logo adicional em dispositivos menores */
-    }
+    
 }
 
 @media (max-width: 767px) {
