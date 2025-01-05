@@ -59,16 +59,16 @@
     <main class="container">
 
         <!-- Caixa de contato (oculta inicialmente) -->
-<div id="caixa-contato" class="caixa-contato">
-    <div class="caixa-contato-conteudo">
-        <h2>Entre em contato</h2>
-        <h3>Informações de Contato</h3>
-        <p><strong>Email:</strong> Chaveseliasimoveis@gmail.com</p>
-        <p><strong>Telefone:</strong> (11) 94755-8646</p>
-        <p><strong>WhatsApp:</strong> (11) 94755-8646</p>
-        <button id="fechar-contato" class="btn-contato">Fechar</button>
-    </div>
-</div>
+        <div id="caixa-contato" class="caixa-contato">
+            <div class="caixa-contato-conteudo">
+                <h2>Entre em contato</h2>
+                <h3>Informações de Contato</h3>
+                <p><strong>Email:</strong> Chaveseliasimoveis@gmail.com</p>
+                <p><strong>Telefone:</strong> (11) 94755-8646</p>
+                <p><strong>WhatsApp:</strong> (11) 94755-8646</p>
+                <button id="fechar-contato" class="btn-contato">Fechar</button>
+            </div>
+        </div>
 
 
         <section class="carrossel-imagens">
@@ -77,7 +77,7 @@
 
             <div class="imagens-container">
                 <!-- FOTOS DO APARTAMENTO -->
-                
+
                 <img src="imagens/f1.jpeg" alt="Imagem do imóvel">
                 <img src="imagens/f2.jpeg" alt="Imagem do imóvel">
                 <img src="imagens/f3.jpeg" alt="Imagem do imóvel">
@@ -118,11 +118,19 @@
                 <img src="imagens/f38.jpeg" alt="Imagem do imóvel">
                 <img src="imagens/f39.jpeg" alt="Imagem do imóvel">
                 <img src="imagens/f40.jpeg" alt="Imagem do imóvel">
-                
+
             </div>
 
             <button class="carrossel-btn nexta"><i class="fas fa-chevron-right"></i></button>
         </section>
+
+        <!-- Modal para exibir as imagens -->
+        <div id="modal-imagem" class="modal">
+            <span class="close">&times;</span>
+            <button class="modal-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <img class="modal-content" id="imagem-aberta" src="">
+            <button class="modal-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
 
         <div class="conteudo">
 
@@ -131,7 +139,8 @@
                 <h2>Apartamento</h2>
 
                 <!-- ENDEREÇO DO IMÓVEL -->
-                <p class="localizacao"><i class="fas fa-map-marker-alt"></i>Rua  dos alecrins 550 bairro portal dos ipês Cajamar SP</p>
+                <p class="localizacao"><i class="fas fa-map-marker-alt"></i>Rua dos alecrins 550 bairro portal dos ipês
+                    Cajamar SP</p>
 
                 <!-- PREÇO -->
                 <p class="preco"> Valor Aluguel 1700,00</p>
@@ -157,27 +166,30 @@
                     apartamento 1 dormitório com sala ampliada, mobiliado bairro portal dos ipês em Cajamar S.
                 </p>
 
-                    <p>
-                        Apto com fogão, geladeira, depurador de ar, armários, na cozinha, panelas, talheres, rack na sala, um guarda roupa, cama box com colchão,
-                        Possui academia, espaço gourmet, jardim, área de brinquedo para as crianças, salão de festas.
-                        Vai lhe possibilitar curtir os dias mais quentes na piscina, praticar diversos esportes na quadra poliesportiva para crianças. Espaço reservado para preparar o seu churrasco.
-                        Uma vaga de garagem, Elevador que garante o transporte das suas malas e compras.
-                        Está em um condomínio com portaria 24 horas
-                    </p>
+                <p>
+                    Apto com fogão, geladeira, depurador de ar, armários, na cozinha, panelas, talheres, rack na sala,
+                    um guarda roupa, cama box com colchão,
+                    Possui academia, espaço gourmet, jardim, área de brinquedo para as crianças, salão de festas.
+                    Vai lhe possibilitar curtir os dias mais quentes na piscina, praticar diversos esportes na quadra
+                    poliesportiva para crianças. Espaço reservado para preparar o seu churrasco.
+                    Uma vaga de garagem, Elevador que garante o transporte das suas malas e compras.
+                    Está em um condomínio com portaria 24 horas
+                </p>
 
-                    <p>
-                        Locação com seguro fiança que fica em media 200,00 mensais, pagos junto com o aluguel, mediante aprovação na seguradora.
-                        Condomínio e IPTU incluso no valor
-                        Agua, gás, luz e seguro fiança a parte.
-                    </p>
+                <p>
+                    Locação com seguro fiança que fica em media 200,00 mensais, pagos junto com o aluguel, mediante
+                    aprovação na seguradora.
+                    Condomínio e IPTU incluso no valor
+                    Agua, gás, luz e seguro fiança a parte.
+                </p>
 
-                    <p>
-                        Locação para uma pessoa ou no máximo duas pessoas.
-                        
-                    </p>
-                    
-                    <p>Não precisa fiador nem depósito caução.</p>
-                
+                <p>
+                    Locação para uma pessoa ou no máximo duas pessoas.
+
+                </p>
+
+                <p>Não precisa fiador nem depósito caução.</p>
+
             </section>
 
             <!-- contato -->
@@ -186,7 +198,7 @@
                 <button class="btn-contato" onclick="abrirContato()">Entrar em Contato</button>
                 <button class="btn-contatowpp wppverde">WhatsApp</button>
                 <p>WhatsApp: (11) 94755-8646</p>
-                
+
 
             </section>
         </div>
@@ -197,7 +209,7 @@
             <div class="mapa-embed">
                 <!-- COLOCAR O LINK DO ENDEREÇO NO GOOGLE MAPS -->
                 <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1830.785029007114!2d-46.86298871088173!3d-23.403766083186355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1d024d6a6249%3A0x4120556d63986b4b!2sR.%20dos%20Alecrins%20-%20Portais%20(Polvilho)%2C%20Cajamar%20-%20SP%2C%2007791-000!5e0!3m2!1spt-BR!2sbr!4v1735410417837!5m2!1spt-BR!2sbr"        
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1830.785029007114!2d-46.86298871088173!3d-23.403766083186355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1d024d6a6249%3A0x4120556d63986b4b!2sR.%20dos%20Alecrins%20-%20Portais%20(Polvilho)%2C%20Cajamar%20-%20SP%2C%2007791-000!5e0!3m2!1spt-BR!2sbr!4v1735410417837!5m2!1spt-BR!2sbr"
                     width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
@@ -250,28 +262,78 @@
 
 
 
-// Obter os botões e a caixa de contato
-const btnContato = document.querySelector('.btn-contato');
-const btnWhatsapp = document.querySelector('.btn-contatowpp');
-const caixaContato = document.getElementById('caixa-contato');
-const btnFecharContato = document.getElementById('fechar-contato');
+        // Obter os botões e a caixa de contato
+        const btnContato = document.querySelector('.btn-contato');
+        const btnWhatsapp = document.querySelector('.btn-contatowpp');
+        const caixaContato = document.getElementById('caixa-contato');
+        const btnFecharContato = document.getElementById('fechar-contato');
 
-// Função para abrir a caixa de contato
-function abrirContato() {
-    caixaContato.style.display = 'flex';  // Torna a caixa visível
-}
+        // Função para abrir a caixa de contato
+        function abrirContato() {
+            caixaContato.style.display = 'flex';  // Torna a caixa visível
+        }
 
-// Função para fechar a caixa de contato
-function fecharContato() {
-    caixaContato.style.display = 'none';  // Torna a caixa invisível
-}
+        // Função para fechar a caixa de contato
+        function fecharContato() {
+            caixaContato.style.display = 'none';  // Torna a caixa invisível
+        }
 
-// Adicionar eventos de clique para abrir a caixa de contato
-btnContato.addEventListener('click', abrirContato);  // Para o botão "Entrar em Contato"
-btnWhatsapp.addEventListener('click', abrirContato);  // Para o botão "WhatsApp"
+        // Adicionar eventos de clique para abrir a caixa de contato
+        btnContato.addEventListener('click', abrirContato);  // Para o botão "Entrar em Contato"
+        btnWhatsapp.addEventListener('click', abrirContato);  // Para o botão "WhatsApp"
 
-// Adicionar evento de clique para fechar a caixa de contato
-btnFecharContato.addEventListener('click', fecharContato);
+        // Adicionar evento de clique para fechar a caixa de contato
+        btnFecharContato.addEventListener('click', fecharContato);
+
+
+        // Seletores principais
+        const imagens = document.querySelectorAll('.imagens-container img');
+        const modal = document.getElementById('modal-imagem');
+        const modalImg = document.getElementById('imagem-aberta');
+        const closeModal = document.querySelector('.close');
+        const prevBtn = document.querySelector('.modal-btn.prev');
+        const nextBtn = document.querySelector('.modal-btn.next');
+
+        let currentImageIndex = 0;
+
+        // Função para abrir o modal
+        function abrirModal(index) {
+            currentImageIndex = index;
+            modalImg.src = imagens[currentImageIndex].src;
+            modal.style.display = 'flex';
+        }
+
+        // Função para fechar o modal
+        function fecharModal() {
+            modal.style.display = 'none';
+        }
+
+        // Função para ir para a próxima imagem
+        function proximaImagem() {
+            currentImageIndex = (currentImageIndex + 1) % imagens.length;
+            modalImg.src = imagens[currentImageIndex].src;
+        }
+
+        // Função para ir para a imagem anterior
+        function imagemAnterior() {
+            currentImageIndex = (currentImageIndex - 1 + imagens.length) % imagens.length;
+            modalImg.src = imagens[currentImageIndex].src;
+        }
+
+        // Adicionar eventos para as imagens
+        imagens.forEach((img, index) => {
+            img.addEventListener('click', () => abrirModal(index));
+        });
+
+        // Eventos dos botões do modal
+        closeModal.addEventListener('click', fecharModal);
+        nextBtn.addEventListener('click', proximaImagem);
+        prevBtn.addEventListener('click', imagemAnterior);
+
+        // Fechar o modal ao clicar fora da imagem
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) fecharModal();
+        });
 
 
     </script>

@@ -59,16 +59,16 @@
     <main class="container">
 
         <!-- Caixa de contato (oculta inicialmente) -->
-<div id="caixa-contato" class="caixa-contato">
-    <div class="caixa-contato-conteudo">
-        <h2>Entre em contato</h2>
-        <h3>Informações de Contato</h3>
-        <p><strong>Email:</strong> Chaveseliasimoveis@gmail.com</p>
-        <p><strong>Telefone:</strong> (11) 94755-8646</p>
-        <p><strong>WhatsApp:</strong> (11) 94755-8646</p>
-        <button id="fechar-contato" class="btn-contato">Fechar</button>
-    </div>
-</div>
+        <div id="caixa-contato" class="caixa-contato">
+            <div class="caixa-contato-conteudo">
+                <h2>Entre em contato</h2>
+                <h3>Informações de Contato</h3>
+                <p><strong>Email:</strong> Chaveseliasimoveis@gmail.com</p>
+                <p><strong>Telefone:</strong> (11) 94755-8646</p>
+                <p><strong>WhatsApp:</strong> (11) 94755-8646</p>
+                <button id="fechar-contato" class="btn-contato">Fechar</button>
+            </div>
+        </div>
 
 
         <section class="carrossel-imagens">
@@ -94,6 +94,15 @@
 
             <button class="carrossel-btn nexta"><i class="fas fa-chevron-right"></i></button>
         </section>
+
+        <!-- Modal para exibir as imagens -->
+        <div id="modal-imagem" class="modal">
+            <span class="close">&times;</span>
+            <button class="modal-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <img class="modal-content" id="imagem-aberta" src="">
+            <button class="modal-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
 
         <div class="conteudo">
 
@@ -137,7 +146,7 @@
                 <button class="btn-contato" onclick="abrirContato()">Entrar em Contato</button>
                 <button class="btn-contatowpp wppverde">WhatsApp</button>
                 <p>WhatsApp: (11) 94755-8646</p>
-                
+
 
             </section>
         </div>
@@ -201,29 +210,78 @@
 
 
 
-// Obter os botões e a caixa de contato
-const btnContato = document.querySelector('.btn-contato');
-const btnWhatsapp = document.querySelector('.btn-contatowpp');
-const caixaContato = document.getElementById('caixa-contato');
-const btnFecharContato = document.getElementById('fechar-contato');
+        // Obter os botões e a caixa de contato
+        const btnContato = document.querySelector('.btn-contato');
+        const btnWhatsapp = document.querySelector('.btn-contatowpp');
+        const caixaContato = document.getElementById('caixa-contato');
+        const btnFecharContato = document.getElementById('fechar-contato');
 
-// Função para abrir a caixa de contato
-function abrirContato() {
-    caixaContato.style.display = 'flex';  // Torna a caixa visível
-}
+        // Função para abrir a caixa de contato
+        function abrirContato() {
+            caixaContato.style.display = 'flex';  // Torna a caixa visível
+        }
 
-// Função para fechar a caixa de contato
-function fecharContato() {
-    caixaContato.style.display = 'none';  // Torna a caixa invisível
-}
+        // Função para fechar a caixa de contato
+        function fecharContato() {
+            caixaContato.style.display = 'none';  // Torna a caixa invisível
+        }
 
-// Adicionar eventos de clique para abrir a caixa de contato
-btnContato.addEventListener('click', abrirContato);  // Para o botão "Entrar em Contato"
-btnWhatsapp.addEventListener('click', abrirContato);  // Para o botão "WhatsApp"
+        // Adicionar eventos de clique para abrir a caixa de contato
+        btnContato.addEventListener('click', abrirContato);  // Para o botão "Entrar em Contato"
+        btnWhatsapp.addEventListener('click', abrirContato);  // Para o botão "WhatsApp"
 
-// Adicionar evento de clique para fechar a caixa de contato
-btnFecharContato.addEventListener('click', fecharContato);
+        // Adicionar evento de clique para fechar a caixa de contato
+        btnFecharContato.addEventListener('click', fecharContato);
 
+
+        // Seletores principais
+        const imagens = document.querySelectorAll('.imagens-container img');
+        const modal = document.getElementById('modal-imagem');
+        const modalImg = document.getElementById('imagem-aberta');
+        const closeModal = document.querySelector('.close');
+        const prevBtn = document.querySelector('.modal-btn.prev');
+        const nextBtn = document.querySelector('.modal-btn.next');
+
+        let currentImageIndex = 0;
+
+        // Função para abrir o modal
+        function abrirModal(index) {
+            currentImageIndex = index;
+            modalImg.src = imagens[currentImageIndex].src;
+            modal.style.display = 'flex';
+        }
+
+        // Função para fechar o modal
+        function fecharModal() {
+            modal.style.display = 'none';
+        }
+
+        // Função para ir para a próxima imagem
+        function proximaImagem() {
+            currentImageIndex = (currentImageIndex + 1) % imagens.length;
+            modalImg.src = imagens[currentImageIndex].src;
+        }
+
+        // Função para ir para a imagem anterior
+        function imagemAnterior() {
+            currentImageIndex = (currentImageIndex - 1 + imagens.length) % imagens.length;
+            modalImg.src = imagens[currentImageIndex].src;
+        }
+
+        // Adicionar eventos para as imagens
+        imagens.forEach((img, index) => {
+            img.addEventListener('click', () => abrirModal(index));
+        });
+
+        // Eventos dos botões do modal
+        closeModal.addEventListener('click', fecharModal);
+        nextBtn.addEventListener('click', proximaImagem);
+        prevBtn.addEventListener('click', imagemAnterior);
+
+        // Fechar o modal ao clicar fora da imagem
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) fecharModal();
+        });
 
     </script>
 
