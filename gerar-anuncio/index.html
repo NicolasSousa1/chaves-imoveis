@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criar Anúncio</title>
+</head>
+<body>
+    <h1>Criar Novo Anúncio</h1>
+    <form id="formulario">
+        <label for="titulo">Título do Anúncio:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="endereco">Endereço do Imóvel:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" required>
+
+        <label for="descricao">Descrição do Imóvel:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+
+        <label for="quartos">Número de Quartos:</label>
+        <input type="number" id="quartos" name="quartos" min="1" required>
+
+        <label for="banheiros">Número de Banheiros:</label>
+        <input type="number" id="banheiros" name="banheiros" min="1" required>
+
+        <label for="vagas">Número de Vagas de Garagem:</label>
+        <input type="number" id="vagas" name="vagas" min="0" required>
+
+        <label for="tamanho">Tamanho (m²):</label>
+        <input type="number" id="tamanho" name="tamanho" min="1" required>
+
+        <label for="imagens">Imagens do Imóvel (envie múltiplas):</label>
+        <input type="file" id="imagens" name="imagens[]" multiple >
+
+        <button type="button" onclick="novo_an(event)">Criar Anúncio</button>
+    </form>
+
+    <div id="anuncio_novo"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
